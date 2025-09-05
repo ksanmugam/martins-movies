@@ -72,27 +72,27 @@ VITE_DEV_MODE=true
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── Card/   # Individual movie card
+├── components/             # Reusable UI components
+│   ├── Card/               # Movie card components
 │   │   ├── MovieCard.tsx   # Individual movie card
-│   ├── Common/   # Individual movie card
+│   ├── Common/             # Shared UI components
 │   │   ├── SearchBar.tsx   # Search functionality
 │   │   └── Pagination.tsx  # Page navigation
-├── constants/   # Individual movie card
-│   ├── placeholder.ts   # Individual movie card
-│   ├── tmdb.constants.ts   # Individual movie card
-├── hooks/              # Custom React hooks
-│   └── useMovies.ts    # TanStack Query hooks
-├── services/           # API layer
-│   └── tmdbApi.ts      # TMDB API integration
-├── theme/              # Chakra UI theme
-│   └── chakraTheme.ts  # Custom theme configuration
-├── types/              # TypeScript definitions
-│   └── movie.types.ts  # Movie-related types
-├── utils/              # Utility functions
-│   └── helpers.ts      # Helper functions
-├── App.tsx             # Main application component
-└── main.tsx            # Application entry point
+├── constants/              # Application constants
+│   ├── placeholder.ts      # Placeholder image and defaults
+│   ├── tmdb.constants.ts   # TMDB constant configuration
+├── hooks/                  # Custom React hooks
+│   └── useMovies.ts        # Movie data
+├── services/               # API layer
+│   └── tmdbApi.ts          # TMDB API integration
+├── theme/                  # Chakra UI theme
+│   └── chakraTheme.ts      # Custom theme
+├── types/                  # TypeScript definitions
+│   └── movie.types.ts      # Movie-related types
+├── utils/                  # Utility functions
+│   └── helpers.ts          # General helper
+├── App.tsx                 # Main application component
+└── main.tsx                # Application entry point
 ```
 
 ## 🛠️ Built With
