@@ -45,9 +45,6 @@ cp .env.example .env.development
 Then open `.env.development` in a text editor and add your own values. Replace `your_api_key_here` with your TMDB API key:
 
 ```env
-VITE_APP_TITLE="Martin's Movies"
-VITE_APP_DESCRIPTION="Discover and track your favorite movies"
-
 VITE_TMDB_API_KEY=your_api_key_here
 
 VITE_ENABLE_ANALYTICS=false

@@ -34,6 +34,7 @@ import {
   validationHelpers,
   errorHelpers 
 } from './utils/helpers';
+import { APP_DESCRIPTION, APP_TITLE } from './constants/tmdb.constants';
 
 const MoviesContent: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -181,11 +182,11 @@ const isLoadingData = hasLoadedOnce && (isRefetching || isFetching);
                 fontWeight="bold"
                 letterSpacing="tight"
               >
-                Martin's Movies
+                {APP_TITLE}
               </Heading>
             </Fade>
             <Text color="gray.400" textAlign="center" fontSize="lg">
-              Discover and track your favorite movies
+              {APP_DESCRIPTION}
             </Text>
           </VStack>
         </Container>
